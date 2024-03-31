@@ -1,28 +1,28 @@
 import React from 'react';
 
-export const Statistics = ({ id, label, percentage }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
       <h2 className="title">Upload stats</h2>
 
       <ul className="stat-list">
-        <li className="id">
+        <li className="item">
           <span className="label">{label}</span>
           <span className="percentage">{percentage}</span>
         </li>
-        <li className="id">
+        <li className="item">
           <span className="label">{label}</span>
           <span className="percentage">{percentage}</span>
         </li>
-        <li className="id">
+        <li className="item">
           <span className="label">{label}</span>
           <span className="percentage">{percentage}</span>
         </li>
-        <li className="id">
+        <li className="item">
           <span className="label">{label}</span>
           <span className="percentage">{percentage}</span>
         </li>
-        <li className="id">
+        <li className="item">
           <span className="label">{label}</span>
           <span className="percentage">{percentage}</span>
         </li>
@@ -30,6 +30,7 @@ export const Statistics = ({ id, label, percentage }) => {
     </section>
   );
 };
+/* 
 export const Statistics = ({ title, stats }) => {
   return (
     <>
@@ -48,3 +49,4 @@ export const Statistics = ({ title, stats }) => {
     </>
   );
 };
+ */
