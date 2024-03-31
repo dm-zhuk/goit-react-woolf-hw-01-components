@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Profile = ({ username, tag, location, avatar, stats }) => {
+export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className="profile">
       <div className="decription">
@@ -29,5 +29,3 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
     </div>
   );
 };
-
-export default Profile;
