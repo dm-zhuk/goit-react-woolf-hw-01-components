@@ -1,5 +1,8 @@
 .task {
-    color: #652323;
+    display: flex;
+    justify-content: center;
+    color: #4e4c4c;
     font-size: 24px;
     font-weight: 700;
+    border-bottom: 1px solid #4e4c4c;
 }

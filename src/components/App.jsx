@@ -1,7 +1,8 @@
 import React from 'react';
-import { Profile } from 'components/Profile/Profile';
-import { Statistics } from 'components/Statistics/Statistics';
-import 'components/Profile/profile.css';
+import Profile from 'components/Profile/Profile';
+import Statistics from 'components/Statistics/Statistics';
+import FriendList from 'components/Statistics/FriendList';
+import 'components/Statistics/Statistics.styled.jsx';
 import styles from 'components/Styles/styles.module.css';
 import user from 'data/user.json';
 import data from 'data/data.json';
@@ -21,7 +22,9 @@ const App = () => {
       <span className={styles.task}>Task II Statistics</span>
       <Statistics title="Upload stats" stats={data} />
       <span className={styles.task}>Task III Friend List</span>
+      <FriendList friends={friends} />;
       <span className={styles.task}>Task IV Transaction History</span>
+      {/* <TransactionHistory /> */}
     </div>
   );
 };
