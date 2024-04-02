@@ -1,18 +1,16 @@
 import React from 'react';
-import './FrienList.styled';
+import './index';
 
-/* В компоненті FriendList обов'язково повинен викликатися компонент FriendListItem, який в props буде отримувати інформацію про одного друга і рендерити li з цими даними. */
-
-const FrienList = ({ avatar, name, isOnline, id }) => {
+const FriendList = ({ avatar, name, isOnline, id }) => {
   return (
-    <div className="friend-list">
-      <ul className="friends">
+    <div className="wrapper">
+      <ul className="friend-list">
         {Object.entries(FriendListItem).map(([avatar, name, isOnline, id]) => (
           <li key={id}>
             <span className="isOnline">{isOnline}</span>
             <span className="avatar">{avatar}</span>
-            <img src={avatar} alt="User avatar" className="avatar" />
-            <span className="name">{name}</span>
+            <img src={avatar} alt="User avatar" className="avatar" width="48" />
+            <p className="name">{name}</p>
           </li>
         ))}
       </ul>
@@ -20,17 +18,26 @@ const FrienList = ({ avatar, name, isOnline, id }) => {
   );
 };
 
-export default FrienList;
-
-<StatList>
-  {stats.map(({ id, label, percentage }) => {
-    const backgroundColor = getRandomColor();
-
-    return (
-      <StatItem key={id} backgroundColor={backgroundColor}>
-        <Label>{label}</Label>
-        <Percentage>{percentage}%</Percentage>
-      </StatItem>
-    );
-  })}
-</StatList>;
+export default FriendList;
+/* 
+  <LeaderBoardProfiles>
+    <FriendListItem>
+    </FriendListItem>
+  </LeaderBoardProfiles>
+</LeaderBoard>;
+ */
+{
+  /* const Statistics = ({ title, stats }) => (
+  <section className="statistics">
+    {title && <h2 className="title">{title}</h2>}
+    <ul className="stat-list">
+      {stats.map(({ id, label, percentage }) => (
+        <li key={id} className="item">
+          <span className="label">{label}</span>
+          <span className="percentage">{percentage}%</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+); */
+}

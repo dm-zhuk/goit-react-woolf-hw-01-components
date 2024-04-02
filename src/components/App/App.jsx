@@ -1,18 +1,11 @@
-import React from 'react';
 import Profile from 'components/Profile/Profile';
 import Statistics from 'components/Statistics/Statistics';
-import FriendList from 'components/Statistics/FriendList';
-import 'components/Statistics/Statistics.styled.jsx';
+// import FriendList from 'components/FriendList/FriendList';
+
 import styles from 'components/Styles/styles.module.css';
 import user from 'data/user.json';
 import data from 'data/data.json';
-import friends from 'data/friends.json';
-import transactions from 'data/transactions.json';
-
-// import { Profile, Statistics, FriendList, TransactionHistory } from 'components';
-// import { user, data, friends, transactions } from 'data';
-
-const root = document.getElementById('root');
+// import friends from 'data/friends.json';
 
 const App = () => {
   return (
@@ -22,7 +15,7 @@ const App = () => {
       <span className={styles.task}>Task II Statistics</span>
       <Statistics title="Upload stats" stats={data} />
       <span className={styles.task}>Task III Friend List</span>
-      <FriendList friends={friends} />;
+      {/* <FriendList friends={friends} /> */}
       <span className={styles.task}>Task IV Transaction History</span>
       {/* <TransactionHistory /> */}
     </div>

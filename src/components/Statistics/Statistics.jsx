@@ -1,5 +1,3 @@
-/* В компоненті Statistics для заголовка повинен бути рендер по умові. Якщо переданий prop title потрібно рендерити заголовок */
-
 import React from 'react';
 import {
   StatisticsWrapper,
@@ -8,7 +6,7 @@ import {
   StatItem,
   Label,
   Percentage,
-} from './Statistics.styled';
+} from './index';
 
 const Statistics = ({ title, stats }) => (
   <StatisticsWrapper>

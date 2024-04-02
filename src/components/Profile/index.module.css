@@ -1,6 +1,6 @@
 .profile {
     background-color: #a29e9e;
-    padding: 16px 16px 8px;
+    padding: 4px;
     max-width: 290px;
     margin: 32px auto;
 }
@@ -21,11 +21,15 @@
     overflow: hidden;
 }
 
-p {
-    margin: 0;
+.tag,
+.location {
     font-size: 18px;
     padding: 4px 0;
     color: #616060;
+}
+
+.tag {
+    font-size: 16px;
 }
 
 .name {

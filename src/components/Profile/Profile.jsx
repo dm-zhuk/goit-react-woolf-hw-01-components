@@ -1,21 +1,21 @@
 import React from 'react';
-import './profile.css';
+import styles from './index.module.css';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className="profile">
-      <div className="decription">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+    <div className={styles.profile}>
+      <div className={styles.decription}>
+        <img src={avatar} alt="User avatar" className={styles.avatar} />
+        <p className={styles.name}>{username}</p>
+        <p className={styles.tag}>@{tag}</p>
+        <p className={styles.location}>{location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className={styles.stats}>
         {Object.entries(stats).map(([label, quantity]) => (
-          <li key={label}>
-            <span className="label">{label}</span>
-            <span className="quantity">{quantity}</span>
+          <li className={styles.li}>
+            <span className={styles.label}>{label}</span>
+            <span className={styles.quantity}>{quantity}</span>
           </li>
         ))}
       </ul>
