@@ -1,7 +1,7 @@
 .profile {
     background-color: #a29e9e;
     padding: 4px;
-    max-width: 290px;
+    max-width: 248px;
     margin: 32px auto;
 }
 
@@ -41,7 +41,6 @@
 .stats {
     display: flex;
     justify-content: space-between;
-    list-style: none;
     background-color: #a29e9e;
 }
 
