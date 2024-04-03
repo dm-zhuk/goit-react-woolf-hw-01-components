@@ -1,7 +1,7 @@
 import React from 'react';
+import friends from 'data/friends.json';
 import FriendListItem from 'components/FriendListItem/FriendListItem';
 import { ListItems } from './index';
-import friends from 'data/friends.json';
 
 const FriendList = () => {
   return (
