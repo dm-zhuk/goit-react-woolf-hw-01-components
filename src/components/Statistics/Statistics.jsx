@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  StatisticsWrapper,
+  StatWrapper,
   Title,
   StatList,
   StatItem,
@@ -9,7 +9,7 @@ import {
 } from './index';
 
 const Statistics = ({ title, stats }) => (
-  <StatisticsWrapper>
+  <StatWrapper>
     {title && <Title>{title}</Title>}
     <StatList>
       {stats.map(({ id, label, percentage }) => {
@@ -23,7 +23,7 @@ const Statistics = ({ title, stats }) => (
         );
       })}
     </StatList>
-  </StatisticsWrapper>
+  </StatWrapper>
 );
 
 function getRandomColor() {

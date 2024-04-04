@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const StatisticsWrapper = styled.section`
+export const StatWrapper = styled.section`
   background: #fefce6;
   max-width: 460px;
   margin: 32px auto;
